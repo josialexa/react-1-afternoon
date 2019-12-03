@@ -19,7 +19,7 @@ class FilterString extends Component {
     handleClick() {
         let {input, filtered, unfiltered} = this.state
 
-        filtered = unfiltered.filter(v => !(v.includes(input)))
+        filtered = unfiltered.filter(v => v.includes(input))
 
         this.setState({
             filtered: filtered

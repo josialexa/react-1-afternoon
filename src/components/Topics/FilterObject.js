@@ -34,7 +34,7 @@ class FilterObject extends Component {
     handleClick() {
         let {input, unfiltered, filtered} = this.state
 
-        filtered = unfiltered.filter(v => !(v[input]))
+        filtered = unfiltered.filter(v => v[input])
 
         this.setState({
             filtered: filtered
